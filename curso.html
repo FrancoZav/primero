@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--lang singnifica el lenguaje que tendra el codigo-->
+  <!--<body> es todo lo que contiene la estructura de la pagina y <head> es lo que llamamos Metadata que son los elementos que actuan detras de escena por ejemplo si queremos poner datos de CSS u otro lenguaje se utiliza head otro, tambien se utiliza para colocar el titulo de tu pagina web lo que puede ayudarte para identificar la pagina en los motores de busqueda(SEO)-->
+  <head>
+    <title>AppDeGastos</title>
+    <!--Se usa con el elemento head, se aplica para todos los elementos que estamos señalando-->
+    <!--<style>
+      h2 {
+        color: blue;
+      }
+
+      h3 {
+        color: green;
+      }
+
+      p {
+        color: purple;
+      }
+    Con el elemento <link href="archivo CSS" rel="stylesheet" se vincula el archivo CSS>  -->
+      <link href="style.css" rel="stylesheet">
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Roboto:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Cambiar un Estilo en linea CSS, se hace en la etiqueta de apertura-->
+    <h2 id="app-gatos" style="color: blue;">AppDeGatos</h2>
+    <main>
+      <h3>Imágenes de Gatos:</h3>
+      <!-- To do: Agregar enlace a imágenes de gastos-->   
+      <p>Haz click aqui para ver más <a href="https://cuantoestaeldolar.pe/" target="_blank" rel="noopener noreferrer">imagenes de gatos.</a></p> 
+      
+      <a href="#parrafo-1">Parrafo 1</a>
+      <!--Para crear una referencia vacia en el href se debe colocar "#"-->
+      <a href="#parrafo-2">Parrafo 2</a>
+      <a href="#parrafo-3">Parrafo 3</a>
+      <a href="#parrafo-4">Parrafo 4</a>
+      <!-- Se utiliza a para realizar enlaces externos, target="_blank" se usa para entrar al link en una nueva pagina y rel="noopener noreferrer" se usa como medida de seguridad no implica un cambio en la pagina-->
+      <a href="https://cuantoestaeldolar.pe/" target="_blank" rel="noopener noreferrer"><img src="Proyector.jpg" class="imagen-de-proyector" alt="Proyector de iluminación"></a>
+      
+      <!--<hr> se usa para poner una linea divisoria entre el texto o imagenes del codigo-->
+      <hr>
+      <!--LISTAS A CONTINUACIÓN <ul> (En ingles significa lista no ordenada) y para cada uno de los elementos de la lista se debe considerar el elemento <li>. Esto indica al ordenador que debe colocar viñetas a cada uno de los elementos-->
+      <h3>Lista de gatos</h3>
+
+      <div>
+        <p>Cosas que <em>aman</em> los gatos</p>
+        <ul id="lista-gatos-aman">
+          <li>Menta gatuna</li>
+          <li><s>Lasaña</s></li>
+          <li>Apuntadores Láser</li>
+        </ul>
+        <!--<strong> usamos strong para indicar que el texto es importante (en negrita)-->
+        <!--<em> lo usamos para palabras en letra cursiva-->
+        <!--<s> lo usamos para tachar alguna palabra o oración-->
+        
+        
+        <p>Cosas que los gatos <strong>odian</strong> </p>
+        <!--LISTA ORDENADA 1. 2. 3. <ol>-->
+        <ol id="lista-gatos-odian">
+          <li>Tratamientos antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+      </div>
+
+      <h3 id="parrafo-1">Parrafo 1</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia debitis harum obcaecati architecto animi tempora! Iusto corrupti est dolor fugiat, nihil optio voluptates ducimus dolorum qui rerum accusantium necessitatibus totam Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga qui deleniti, nobis unde consequatur quaerat magni harum quod atque esse porro dolore assumenda dignissimos beatae quam quia consequuntur sapiente?</p>
+      
+      <h3 id="parrafo-2">Parrafo 2</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, neque, similique nobis cupiditate atque fuga iste voluptates est eos, repellendus dignissimos. Velit, possimus laboriosam at placeat eum ut nam unde Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aut tenetur beatae veritatis, consectetur dolores obcaecati tempora ipsum possimus culpa provident, voluptates quam similique recusandae inventore in voluptatibus rem perspiciatis?</p>
+      
+      <h3 id="parrafo-3">Parrafo 3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minima modi optio in incidunt explicabo sequi, doloribus accusantium, eaque voluptate ea officia! Temporibus veritatis consequatur itaque deserunt, ea ut sed Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ratione magni, necessitatibus recusandae aliquid optio soluta laborum eaque cupiditate! Beatae vero adipisci, sint odio sed sapiente amet suscipit iure libero!</p>
+      
+      <h3 id="parrafo-4">Parrafo 4</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam modi obcaecati praesentium adipisci alias numquam nulla, saepe fuga voluptatum sint laborum. Ex neque id mollitia voluptatum nisi consequuntur? Ad, explicabo?</p> 
+      
+      <!--<form> se usa para añadir un formulario <input type="text" es para que el usuario tenga una respuesta, en este caso de tipo texto. En action se coloca la direccion del archivo en el servidor donde ira la respuesta. Placeholder es un atributo de input para señalar lo que el usuario debe colocar en el texto-->
+      <!--<button se usa para crear un boton type="submit" submit = enviar-->
+      <!--Campos obligatorios en formularios se usa el atributo required en button-->
+      <!--Botones de radio input type="radio" se añade el atributo name para crear grupos de botones de radio y poder marcar uno a la vez -->
+      <!--<label> sirve para que cuando se haga click en la palabra se añade el la marcación-->
+      <!--El atributo value es para indicarle que valor se le va dar a la respuesta al servidor por ejemplo si marco "Interior" al servidor le daremos una respuesta de "interior" para el grupo "interior-exterior"-->
+
+      <form action="/enviar-respuesta">
+        <label for="interior"><input id="interior" type="radio" value="interior" name="interior-exterior"Checked>Interior</label><br>
+
+        <!--Se usa <br> para colocar en la siguiente linea de texte (abajo) lo que viene del codigo-->
+        <!--Atributo Checked nos permite marcar alguna opcion por defecto en casillas de verificacion o botones de radio-->
+        <!--El atributo <div> es un contenedor generico, lo usamos para generar estructuras mas complejas en paginas web-->
+        
+        <label for="exterior"><input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior</label><br>
+        <!--Casillas de verificación-->
+        <label for="carinoso"><input id="carinoso" type="checkbox"     value="carinoso" name="personalidad"Checked>Cariñoso</label>
+        <label for="perezoso"><input id="perezoso" type="checkbox" value="perezoso" name="personalidad">Perezoso</label>
+        <label for="energico"><input id="energico" type="checkbox" value="energico" name="personalidad">Enérgico</label><br>
+
+        <!--Texto y boton enviar-->
+        <input type="text" placeholder="URL de la foto de tu gato" required><br>
+        <button type="submit">Enviar</button>
+
+      </form>
+    </main>
+    <!-- Para crear un pie de pagina tenemos que colocar el elemento <footer> dentro de footer colocamos un parrafo>-->
+    <!--Etiqueta <small> sirve para hacer la letra mas pequeña  -->
+    <footer>
+      <p><small>Derechos de Autor - <a href="https://cuantoestaeldolar.pe/" target="_blank">freeCodeCamp.org</a></small> </p>
+    </footer>
+  </body>
+</html>

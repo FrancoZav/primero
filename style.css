@@ -1,0 +1,41 @@
+h2 {
+	font-family: 'Neonderthaw', cursive;
+	font-size: 50px;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.imagen-de-proyector {
+	width: 200px;
+	border-width: 5px;
+	border-color: blue;
+	border-style: solid dotted dashed double;
+	border-radius: 20%;
+}
+
+div {
+	background-color: crimson;
+	padding: 25px;
+	margin: 25px;
+	border-width: 10px;
+	border-color: black;
+	border-style: solid;;
+}
+
+#app-gatos {
+	font-size: 30px;
+	color: green;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#lista-gatos-aman {
+	font-size: 15px;
+	color: blueviolet;
+}
+
+#lista-gatos-odian {
+	font-size: 20px;
+	color: red;
+}
